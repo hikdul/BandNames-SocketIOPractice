@@ -1,8 +1,8 @@
 
 import io from 'socket.io-client' 
 
-export const connectSocketServer = () => {
-  const socket = io.connect('http://localhost:5000',
+export const connectSocketServer = (serverPath) => {
+  const socket = io.connect(serverPath,
     {
       transports: ['websocket']
     })
