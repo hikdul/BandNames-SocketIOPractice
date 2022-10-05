@@ -14,7 +14,7 @@ class Sockets {
     socketEvents() {
         this.io.on('connection', (socket) => {
 
-            console.log('Client connect')
+            console.log(`Client connect, ID: ${socket.id}`)
 
             // emit to client the bandList
 
